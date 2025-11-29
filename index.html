@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--Codificação de caracteres universal-->
+    <meta charset="UTF-8">
+    <!--Serve para instruir o navegador a controlar a exibição de uma página em diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linkage do CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Icone do site-->
+    <link rel="shortcut icon" href="img/icon-blackpink.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>BLΛƆKPIИK</title>
+</head>
+
+<body>
+    <header>
+        <!--Logo da pagina no menu-->
+        <img src="img/logotipo-blackpink.png">
+        <!--Menu-->
+        <nav>
+            <ul class="menu" id="menu">
+                <li>
+                    <i class="bi bi-house"></i>
+                    <h2 class="font"><a href="index.html">Home</a></h2>
+                </li>
+                <li>
+                    <i class="bi bi-music-note-beamed"></i>
+                    <h2 class="font"><a href="#">Musicas do grupo</a></h2>
+                </li>
+                <li>
+                    <i class="bi bi-people-fill"></i>
+                    <h2 class="font"><a class="sub">Membros do grupo</a></h2>
+                    <ul>
+                        <li>
+                            <h2 class="font"><a href="jisoo.html">Sobre Jisoo</a></h2>
+                        </li>
+                        <li>
+                            <h2 class="font"><a href="jennie.html">Sobre Jennie</a></h2>
+                        </li>
+                        <li>
+                            <h2 class="font"><a href="rosé.html">Sobre Rosé</a></h2>
+                        </li>
+                        <li>
+                            <h2 class="font"><a href="#">Sobre Lisa</a></h2>
+                        </li>
+                    </ul>
+                </li>
+                <button>
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    <h2 class="font"><a href="formulario.html">Entrar</a></h2>
+                </button>
+            </ul>
+        </nav>
+        <!--Menu Hamburguer-->
+        <div class="mobile-menu-icon">
+            <button class="login-button">
+                <h2 class="font"><a href="formulario.html">Entrar</a></h2>
+            </button>
+            <button onclick="menuShow()">☰</button>
+            <!--Função de abrir e fechar do Menu responsivo-->
+        </div>
+        <!--Menu responsivo-->
+        <div class="mobile-menu">
+            <ul class="menu" id="menu">
+                <li>
+                    <i class="bi bi-house"></i>
+                    <h2 class="font"><a href="index.html">Home</a></h2>
+                </li>
+                <li>
+                    <i class="bi bi-music-note-beamed"></i>
+                    <h2 class="font"><a href="#">Musicas do grupo</a></h2>
+                </li>
+                <li>
+                    <i class="bi bi-people-fill"></i>
+                    <h2 class="font"><a class="sub">Membros do grupo</a></h2>
+                    <ul>
+                        <li>
+                            <h2 class="font"><a href="jisoo.html">Sobre Jisoo</a></h2>
+                        </li>
+                        <li>
+                            <h2 class="font"><a href="jennie.html">Sobre Jennie</a></h2>
+                        </li>
+                        <li>
+                            <h2 class="font"><a href="rosé.html">Sobre Rosé</a></h2>
+                        </li>
+                        <li>
+                            <h2 class="font"><a href="#">Sobre Lisa</a></h2>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--Hiperlinks dentro da propria pagina -> <a href="#secao">-->
+    <nav class="hiperlinks">
+        <a href="#blackpink">BLΛƆKPIИK</a>
+        <a href="#historia">História</a>
+        <a href="#integrantes-do-blackpink">Integrantes</a>
+        <a href="#premios-blackpink">Prêmios</a>
+    </nav>
+    <div class="slideshow-container">
+        <!--Slides-->
+        <div class="card-slide">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+
+            <div class="carousel">
+                <div class="slides">
+                    <img src="img/slide1.png" alt="img1">
+                    <img src="img/slide2.png" alt="img2">
+                    <img src="img/slide3.png" alt="img3">
+                </div>
+            </div>
+            <div class="navigation">
+                <i class="bi bi-caret-left-fill" id="prev"></i>
+                <label for="slide1" class="bar"></label>
+                <label for="slide2" class="bar"></label>
+                <label for="slide3" class="bar"></label>
+                <i class="bi bi-caret-right-fill" id="next"></i>
+            </div>
+        </div>
+    </div>
+    <!--Conteúdo da pagina-->
+    <div class="corpo">
+        <h1 id="blackpink">BLΛƆKPIИK</h1>
+        <p>&nbsp;</p>
+        <div class="text">
+            Blackpink (hangul: 블랙핑크; rr: Beullaegpingkeu; estilizado como BLACKPINK ou BLΛƆKPIИK) é um girl group
+            sul-coreano formado pela YG Entertainment, consistindo das integrantes Jisoo, Jennie, Rosé e Lisa. O
+            grupo estreou em agosto de 2016 com seu single álbum Square One, que contou com "Whistle" e "Boombayah",
+            suas primeiras entradas número um na Gaon Digital Chart da Coreia do Sul e na World Digital Song Sales da
+            Billboard dos EUA, respectivamente.
+            <br>
+        </div>
+        <div class="text">
+            Blackpink é o girl group coreano de maior sucesso internacionalmente e muitas vezes foi apelidado de "o
+            maior girl group do mundo". Elas são o ato feminino coreano de maior sucesso na Billboard Hot 100, chegando
+            ao número 13 com "Ice Cream" (2020), e na Billboard 200, chegando ao primeiro lugar com Born Pink (2022) que
+            também estabeleceu o recorde para o álbum mais vendido de um girl group coreano e foi o primeiro a vender
+            mais de dois milhões de cópias. Elas foram o primeiro girl group coreano a liderar o Artist 100 da Billboard
+            e o primeiro girl group coreano a entrar e liderar a parada Emerging Artists da Billboard. Blackpink também
+            foi o primeiro ato feminino coreano a receber uma certificação da Recording Industry Association of America
+            (RIAA) com seu single "Ddu-Du Ddu-Du" (2018), cujo videoclipe foi o primeiro de um grupo coreano a superar
+            um bilhões de visualizações e atualmente é o mais visto por um grupo coreano no YouTube. Sua canção de 2018
+            "Kiss and Make Up", uma colaboração com Dua Lipa, foi a primeira de um grupo coreano a receber uma
+            certificação da
+            British Phonographic Industry (BPI) e a primeira música de um grupo coreano a ser certificado como platina
+            pela Australian Recording Industry Association (ARIA). Born Pink foi o primeiro álbum de um girl group de
+            K-pop
+            na história a alcançar o número um na Billboard 200, bem como no UK Albums Chart. O single principal do
+            álbum "Pink Venom" também foi a primeira canção do grupo coreano a chegar ao topo da ARIA Singles Chart em
+            2022.
+            <br>
+        </div>
+        <p>&nbsp;</p>
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Blackpink_PUBG_210321.jpg/435px-Blackpink_PUBG_210321.jpg"
+                alt="Foto do Blackpink em março de 2021. Da esquerda para a direita: Jisoo, Jennie, Rosé e Lisa">
+            <figcaption>Blackpink em março de 2021. Da esquerda para a <br> direita: Jisoo, Jennie, Rosé e Lisa
+            </figcaption>
+        </figure>
+        <br>
+        <div class="text">
+            Blackpink quebrou vários recordes online ao longo de sua carreira. Seus videoclipes de "Kill
+            This Love" (2019) e "How You Like That" (2020) estabeleceram recordes para o videoclipe mais visto nas
+            primeiras 24 horas de lançamento, com o último quebrando três e estabelecendo dois Guinness World Records.
+            Elas também são o primeiro grupo coreano a ter dois videoclipes com pelo menos um bilhão de visualizações no
+            YouTube. Elas são o primeiro grupo musical e ato feminino coreano a ter cinco videoclipes acumulando um
+            bilhão de visualizações cada no YouTube; o ato musical mais inscrito na plataforma e o primeiro a atingir
+            mais de 75 milhões de assinantes; e o grupo feminino mais seguido no Spotify.
+            Seus outros prêmios incluem o Prêmio de Novo Artista do Ano no 31º Golden Disc Awards e o 26º Seoul Music
+            Awards, o Mnet Asian Music Award de Melhor Grupo Feminino em 2020, o primeiro MTV Music Video Award ganho
+            por um grupo feminino coreano, e reconhecimento como o primeiro grupo feminino coreano no 30 Under 30 Asia
+            da Forbes.
+            Elas foram reconhecidas como uma das celebridades mais poderosas da Coreia do Sul pela Forbes Korea
+            (colocado em primeiro lugar em 2019, terceiro em 2020 e segundo em 2021) e pelo ex-presidente sul-coreano
+            Moon Jae-in como um fenômeno global do K-pop ajudando a espalhar o conteúdo do K-pop em todo o mundo.
+
+        </div>
+        <p>&nbsp;</p>
+        <h1 id="historia">História</h1>
+        <p>&nbsp;</p>
+        <h3>2010–2016: Formação e atividades de pré-estreia</h3>
+        <p>&nbsp;</p>
+        <div class="text">
+            Blackpink começou a se formar quando a YG Entertainment realizou testes em todo o mundo para
+            recrutar pré-adolescentes ou adolescentes com o objetivo de criar um novo grupo feminino, após o lançamento
+            de seu primeiro grande grupo, 2NE1, em 2009. De acordo com as integrantes, ingressar na gravadora como
+            estagiárias era semelhante a se matricular em uma academia de pop-star em tempo integral, com Jennie
+            descrevendo a experiência como “mais rigorosa que a escola” e Rosé comparando-a ao The X Factor, porém com
+            dormitórios.
+            Para as integrantes que deixaram suas vidas fora da Coreia do Sul, o ritmo de treinamento, somado ao choque
+            cultural, foi especialmente difícil. Os preparativos para a estreia do Blackpink começaram em 2011, quando a
+            YG Entertainment revelou, em 14 de novembro daquele ano, que o novo grupo feminino da gravadora estrearia no
+            início de 2012 com pelo menos sete integrantes.
+            A partir de então, surgiram inúmeras notícias e rumores sobre o novo girl group e o atraso de sua estreia,
+            mas não havia informações oficiais. Somente em 18 de maio de 2016 a YG Entertainment confirmou que o grupo
+            estrearia em julho, afirmando que as integrantes haviam sido selecionadas após anos de forte competição. A
+            gravadora mais tarde confirmou que Jang Hanna e Moon Sua, que haviam sido apresentadas ao público como
+            integrantes em potencial do novo girl group, não foram incluídas na formação de estreia.
+
+        </div>
+        <div class="text">
+            Jennie foi a primeira integrante revelada a estar no grupo, em 1º de junho. Ela se juntou à YG
+            Entertainment como estagiária em 2010, depois de retornar à Coreia do Sul vinda da Nova Zelândia. Em 2012,
+            Jennie foi apresentada ao público pela primeira vez por meio de uma foto intitulada “Who’s that girl?”,
+            publicada no blog oficial da YG Entertainment em 10 de abril.
+            Jennie continuou sendo promovida como integrante do novo girl group através de diversas colaborações, como
+            ao estrelar o videoclipe de “That XX”, de G-Dragon, lançado em 2012 no EP One of a Kind. Ela também
+            participou das faixas “Black”, do álbum Coup d’etat (2013) de G-Dragon, e “Special”, do álbum First Love
+            (2013) de Lee Hi.
+
+        </div>
+        <div class="text">
+            Lisa foi revelada como a segunda integrante em 8 de junho de 2016. Ela foi a única pessoa
+            entre 4.000 candidatos a ser aprovada na audição da YG Entertainment em 2010, realizada em seu país natal, a
+            Tailândia, tornando-se a primeira estagiária estrangeira da gravadora em 2011.
+            Ela foi apresentada pela primeira vez ao público em 2012, em um vídeo postado no canal oficial da YG
+            Entertainment no YouTube, intitulado “WHO’S THAT GIRL???”. Lisa também apareceu no videoclipe de “Ringa
+            Linga”, de Taeyang, em 2013.
+            Além disso, tornou-se porta-voz da marca de roupas de rua Nona9on em 2015 e da marca de cosméticos Moonshot
+            em 2016.
+        </div>
+        <div class="text">
+            Jisoo foi revelada como a terceira integrante do novo grupo em 15 de junho de 2016. Ela
+            ingressou na YG Entertainment como estagiária em julho de 2011 e, durante seus anos de pré-estreia, apareceu
+            em diversos anúncios e videoclipes, incluindo “Spoiler + Happy Ending” (2014), do álbum Shoebox do Epik
+            High, e no videoclipe de Hi Suhyun “I’m Different” (2014). Além disso, Jisoo fez uma aparição no drama The
+            Producers em 2015.
+        </div>
+        <div class="text">
+            Rosé foi a última integrante a ser revelada, em 22 de junho de 2016. Ela ficou em primeiro
+            lugar entre 700 candidatos na audição da YG Entertainment realizada em 2012, na Austrália. Após isso,
+            assinou um contrato como estagiária da gravadora e se mudou para Seul para iniciar seu treinamento.
+            Rosé apareceu na faixa “Without You” (2012), de G-Dragon, do EP One of a Kind, sendo creditada como “?
+            from YG New Girl Group” até sua apresentação pública oficial.
+        </div>
+        <br>
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Blackpink_logo.svg/338px-Blackpink_logo.svg.png">
+            <figcaption>O logotipo oficial de Blackpink </figcaption>
+        </figure>
+        <br>
+        <div class="text">
+            Em 29 de junho, a YG Entertainment confirmou que o novo girl group teria quatro integrantes,
+            em vez das nove originalmente planejadas, e revelou seu nome oficial como Blackpink. De acordo com um
+            representante da gravadora, o nome do grupo significava “bonito não é tudo” e simbolizava que “elas são um
+            time que engloba não apenas beleza, mas também grande talento”.
+            Jisoo mais tarde revelou, em uma conferência de imprensa, que outros nomes considerados para o grupo
+            incluíam Pink Punk, Baby Monster e Magnum.
+            O Blackpink lançou seu primeiro vídeo de prática de dança em 6 de julho, recebendo grande atenção do
+            público. Em 29 de julho, a YG Entertainment confirmou que a estreia oficial do grupo aconteceria em 8 de
+            agosto de 2016.
+        </div>
+        <p>&nbsp;</p>
+        <h3>2016–2017: Estreia, popularidade crescente e sucesso comercial</h3>
+        <p>&nbsp;</p>
+        <br>
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/2a/20161119_%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC_%EB%A9%9C%EB%A1%A0%EB%AE%A4%EC%A7%81%EC%96%B4%EC%9B%8C%EB%93%9C_%281%29.jpg?20220224075301">
+            <figcaption>Blackpink apresentando<br>"Playing with Fire" no Melon Music<br>Awards de 2016 em 19
+                de<br>novembro
+                de 2016</figcaption>
+        </figure>
+        <br>
+        <div class="text">
+            As promoções para a estreia do grupo começaram na primeira semana de agosto de 2016, com o
+            lançamento de imagens prévias, vídeos e anúncios. O Blackpink foi o primeiro girl group a estrear pela YG
+            Entertainment em sete anos e lançou seu primeiro single álbum, Square One, em 8 de agosto de 2016,
+            composto pelas faixas “Boombayah” e “Whistle”.
+            As duas músicas alcançaram as posições número um e dois na parada World Digital Song Sales da Billboard,
+            tornando o Blackpink o ato mais rápido a conquistar tal feito e o terceiro artista da YG Entertainment a
+            ocupar as duas primeiras posições simultaneamente, depois de Psy e Big Bang.
+            “Whistle” rapidamente alcançou o topo das paradas digitais, de download, streaming e mobile da Gaon. O
+            grupo também ficou em primeiro lugar nas paradas semanais de popularidade, videoclipes e videoclipes de
+            K-pop do maior serviço de streaming de música da China, o QQ Music.
+            A primeira apresentação do Blackpink foi exibida em 14 de agosto de 2016, no programa Inkigayo da SBS.
+            Elas ganharam o primeiro lugar no Inkigayo apenas treze dias após a estreia, quebrando o recorde de menor
+            tempo para um girl group conquistar uma vitória em um programa de música. As promoções de Square One foram
+            encerradas em 11 de setembro de 2016, com mais uma vitória no Inkigayo.
+        </div>
+        <div class="text">
+            Blackpink lançou seu segundo single álbum, Square Two, composto pelas faixas “Playing with
+            Fire” e “Stay”, em 1º de novembro de 2016. O grupo iniciou as promoções no Inkigayo em 6 de novembro e no
+            M Countdown da Mnet em 10 de novembro.
+            “Playing with Fire” foi o segundo single do Blackpink a alcançar o número um na parada World Digital Songs
+            da Billboard e também se tornou a primeira música de um girl group de K-pop a entrar na parada Canadian
+            Hot 100. Na Coreia do Sul, “Playing with Fire” atingiu o número três, enquanto “Stay” chegou ao décimo
+            lugar.
+            O sucesso comercial do Blackpink em seus primeiros cinco meses de carreira rendeu ao grupo diversos prêmios
+            de estreia nos principais shows de premiação de fim de ano da Coreia, incluindo o Asia Artist Awards,
+            Melon Music Awards, Golden Disc Awards, Seoul Music Awards e Gaon Chart Music Awards.
+            Além disso, a Billboard nomeou o Blackpink como um dos melhores novos grupos de K-pop de 2016.
+        </div>
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC%28BlackPink%29_-_%EB%A7%88%EC%A7%80%EB%A7%89%EC%B2%98%EB%9F%BC_171001_%EC%BD%94%EB%A6%AC%EC%95%84%EB%AE%A4%EC%A7%81%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C.jpg/1200px-%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC%28BlackPink%29_-_%EB%A7%88%EC%A7%80%EB%A7%89%EC%B2%98%EB%9F%BC_171001_%EC%BD%94%EB%A6%AC%EC%95%84%EB%AE%A4%EC%A7%81%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C.jpg?20171103050209">
+            <figcaption>Blackpink apresentando "As If It's<br>Your Last" no Korea Music Festival,<br>realizado em
+                Gocheok
+                Sky Dome,<br>Seul, em 1 de outubro de 2017.</figcaption>
+        </figure>
+        <br>
+        <div class="text">
+            Em 17 de janeiro de 2017, o Blackpink revelou o nome de seu fã-clube: Blink, uma
+            palavra-valise formada a partir de “black” e “pink”.
+            Em 22 de junho, o grupo lançou seu primeiro single digital autônomo, As If It's Your Last. A faixa foi
+            descrita como um gênero musical misto e representou uma mudança de som em relação aos lançamentos
+            anteriores. A canção alcançou o número três na Gaon Digital Chart e a posição 13 na Bubbling Under Hot
+            100 da Billboard, tornando-se a música coreana mais bem posicionada por um grupo na América na época e
+            consolidando o Blackpink como o grupo coreano de maior sucesso desde o Wonder Girls em 2009.
+            O single estreou em primeiro lugar na parada World Digital Song Sales da Billboard um dia após o
+            lançamento, tornando-se o terceiro número um do grupo nessa lista. O videoclipe da música quebrou o recorde
+            de videoclipe mais curtido por um girl group coreano no YouTube e também se tornou o videoclipe de K-pop
+            mais assistido nas primeiras 24 horas de lançamento.
+            Em 20 de julho de 2017, o Blackpink realizou um showcase no Nippon Budokan em Tóquio, com a presença de
+            mais de 14.000 pessoas, enquanto cerca de 200.000 tentaram comprar ingressos. O grupo fez sua estreia
+            oficial no Japão em 30 de agosto de 2017, lançando seu extended play japonês auto-intitulado, que incluía
+            versões japonesas de seus singles anteriores. O EP estreou no topo da Oricon Albums Chart.
+            Além disso, As If It's Your Last foi classificada entre as 25 melhores músicas globais do verão de 2017 no
+            YouTube.
+        </div>
+        <p>&nbsp;</p>
+        <br>
+        <h3>2018–2019: Reconhecimento internacional e primeira turnê mundial </h3>
+        <p>&nbsp;</p>
+        <div class="text">
+            Em 6 de janeiro de 2018, o Blackpink lançou o primeiro episódio de seu primeiro reality show,
+            Blackpink House, que contou com 12 episódios lançados ao longo do ano. O programa acompanhou as quatro
+            integrantes durante 100 dias de férias e sua mudança para o novo dormitório, sendo exibido pelos canais
+            oficiais do grupo no V Live e no YouTube.
+            No mesmo mês, foi anunciado que o EP japonês de estreia do grupo seria relançado sob o título Re:
+            Blackpink. A versão digital incluía as mesmas faixas do lançamento original, enquanto a versão física
+            trazia um DVD com todos os videoclipes e seis músicas em coreano.
+        </div>
+        <br>
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5d/180125_%EC%84%9C%EC%9A%B8%EA%B0%80%EC%9A%94%EB%8C%80%EC%83%81_-_%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC.png?20180701130426">
+            <figcaption>Blackpink na 27ª edição do Seoul Music<br>Awards, em 25 de janeiro de 2018.</figcaption>
+        </figure>
+        <br>
+        <div class="text">
+            Em 15 de junho de 2018, o Blackpink lançou seu primeiro EP em coreano, Square Up. Na Coreia
+            do Sul, o EP estreou em primeiro lugar na Gaon Albums Chart e foi certificado Platina pela Korea Music
+            Content Association (KMCA) por vender 250.000 unidades.
+            O single “Ddu-Du Ddu-Du” alcançou o número um nas paradas digitais, download, streaming e mobile da Gaon por
+            três semanas, enquanto “Forever Young” atingiu o número dois. Ambas as faixas foram certificadas Platina
+            pela KMCA, com mais de 2.500.000 downloads e 100.000.000 de streams cada uma no país.
+            Nos Estados Unidos, “Ddu-Du Ddu-Du” estreou na posição número 55 na Billboard Hot 100, tornando o
+            Blackpink o girl group coreano com a posição mais alta na parada até então, e alcançou o número 39 na parada
+            Streaming Songs, tornando o Blackpink o primeiro girl group de K-pop a entrar nessa lista.
+            Square Up também marcou a primeira entrada do grupo na Billboard 200, estreando no número 40, e liderou
+            a parada World Albums da Billboard. O videoclipe de “Ddu-Du Ddu-Du” acumulou 36,2 milhões de visualizações
+            nas primeiras 24 horas após o lançamento, tornando-se o vídeo online mais visto nas primeiras 24 horas por
+            um ato coreano e o segundo videoclipe mais assistido nesse período na época.
+        </div>
+        <br>
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5a/180624_%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC_%EB%B6%84%EB%8B%B9_AK%ED%94%8C%EB%9D%BC%EC%9E%90_%ED%8C%AC%EC%82%AC%EC%9D%B8%ED%9A%8C_1.jpg">
+            <figcaption>Blackpink participando de um evento<br>de autógrafos para Square Up realizado<br>no AK Plaza
+                em Bundang, 24 de junho de 2018</figcaption>
+        </figure>
+        <br>
+        <div class="text">
+            Blackpink embarcou em sua primeira turnê no Japão, a Blackpink Arena Tour 2018, em Osaka,
+            nos dias 24 e 25 de julho, para promover seu EP japonês. Inicialmente, a turnê estava programada para seis
+            shows em Osaka, Fukuoka e Chiba, mas um show adicional em Chiba foi adicionado devido à alta demanda.
+            Uma parada final da turnê foi posteriormente marcada para 24 de dezembro no Kyocera Dome Osaka como um
+            presente de Natal para os fãs, com o Blackpink se apresentando para uma multidão esgotada de 50.000 pessoas.
+            Em 12 de setembro, foi anunciado que o grupo faria seu primeiro show em Seul, o Blackpink 2018 Tour [In
+            Your Area] Seoul x BC Card, na Olympic Gymnastics Arena. Este show marcou o início da In Your Area World
+            Tour, que se estendeu ao longo de 2019 e início de 2020, abrangendo América do Norte, Europa, Oceania e
+            Ásia. Ao final da turnê, ela se tornou a turnê de maior bilheteria realizada por um girl group sul-coreano.
+        </div>
+        <div class="text">
+            Em 19 de outubro de 2018, a cantora inglesa Dua Lipa lançou a faixa Kiss and Make Up em
+            parceria com o Blackpink, incluída na edição relançada de seu álbum de estreia auto-intitulado.
+            Kiss and Make Up marcou a segunda entrada do Blackpink na UK Singles Chart, alcançando a posição número
+            36 e se tornando sua primeira música no top 40. O grupo se tornou o primeiro girl group coreano e o terceiro
+            ato coreano em geral a atingir o top 40 na parada britânica.
+            Nos Estados Unidos, a canção estreou na posição número 93 na Billboard Hot 100, representando a segunda
+            entrada do Blackpink na parada e tornando-as o único girl group coreano a registrar múltiplas entradas na
+            Hot 100.
+        </div>
+        <div class="text">
+            Em outubro de 2018, o grupo assinou com a Interscope Records em uma parceria global com a YG
+            Entertainment, sendo representado pela Interscope e pela Universal Music Group fora da Ásia.
+            Em novembro de 2018, o Blackpink anunciou datas adicionais de sua In Your Area World Tour, abrangendo
+            treze apresentações na Ásia entre janeiro e março de 2019. Jennie fez sua estreia solo com o single “Solo”
+            durante o show do Blackpink em Seul em 11 de novembro, com a canção e o videoclipe oficial sendo lançados no
+            dia seguinte.
+            O primeiro álbum de estúdio japonês do grupo, Blackpink in Your Area, foi disponibilizado digitalmente em
+            23 de novembro e fisicamente em 5 de dezembro. O álbum incluiu versões japonesas de todos os lançamentos
+            anteriores do grupo e estreou na posição número nove na Oricon Albums Chart.
+        </div>
+        <br>
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/20190106_%28NEWSEN%29_%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC_%28BLACKPINK%29%2C_%EC%88%98%EC%A4%8D%EC%9D%80_%EB%A7%8E%EC%9D%80_%EC%86%8C%EB%85%80%EC%A7%80%EB%A7%8C_%EB%8F%8B%EB%B3%B4%EC%9D%B4%EB%8A%94_%EC%95%84%EB%A6%84%EB%8B%A4%EC%9A%B4_%EB%AF%B8%EB%AA%A8_%28Golden_Disc_Awards_2019%29_%282%29.jpg/1199px-20190106_%28NEWSEN%29_%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC_%28BLACKPINK%29%2C_%EC%88%98%EC%A4%8D%EC%9D%80_%EB%A7%8E%EC%9D%80_%EC%86%8C%EB%85%80%EC%A7%80%EB%A7%8C_%EB%8F%8B%EB%B3%B4%EC%9D%B4%EB%8A%94_%EC%95%84%EB%A6%84%EB%8B%A4%EC%9A%B4_%EB%AF%B8%EB%AA%A8_%28Golden_Disc_Awards_2019%29_%282%29.jpg?20220206050231">
+            <figcaption>Blackpink no 33º Golden Disc Awards, em 2019 </figcaption>
+        </figure>
+        <br>
+        <div class="text">
+            Blackpink fez sua estreia americana no Grammy Artist Showcase 2019 do Universal Music Group,
+            um evento apenas para convidados no ROW no centro de Los Angeles em 9 de fevereiro de 2019. O grupo
+            posteriormente apareceu em vários programas de televisão americanos, incluindo The Late Show with Stephen
+            Colbert e Good Morning America. Em março daquele ano, elas se tornaram o primeiro girl group de K-pop a
+            adornar a capa da revista Billboard.
+        </div>
+        <div class="text">
+            O terceiro EP do Blackpink, Kill This Love, foi lançado em 5 de abril de 2019, juntamente
+            com um single de mesmo nome. O EP estreou na posição número três na Gaon Album Chart e foi certificado 2×
+            Platina por vender 500.000 unidades na Coreia do Sul, enquanto o single principal alcançou o número dois na
+            Gaon Digital Chart.
+            Kill This Love também estreou na posição 24 na Billboard 200, e o single principal alcançou o número 41
+            na Hot 100, tornando-se os lançamentos mais bem-sucedidos de um ato feminino coreano nas duas principais
+            paradas da Billboard. A faixa “Kill This Love” ficou em 66º lugar na lista das 100 melhores músicas de 2019
+            da Billboard.
+            Após o lançamento do EP, o Blackpink se apresentou no Coachella Valley Music and Arts Festival de 2019,
+            nos dias 12 e 19 de abril, tornando-se o primeiro girl group de K-pop a se apresentar no evento. A
+            apresentação do grupo no Coachella foi bem recebida por críticos e fãs, com Gab Ginsberg, da Billboard,
+            descrevendo o show como “eletrizante” e “inesquecível”.
+        </div>
+        <div class="text">
+            Em 16 de outubro de 2019, uma versão japonesa de Kill This Love foi lançada no mercado japonês, chegando ao
+            número 17 na Oricon Albums Chart. O grupo embarcou para o Japão para uma variedade de atividades
+            promocionais,incluindo aparições em programas de televisão de música japonesa Music Station da TV
+            Asahi e Love Music da Fuji TV. Blackpink foi eleito a Sensação K-pop do Ano da revista Paper para a edição
+            de 2019 de sua lista anual Break the Internet Awards™.
+        </div>
+        <p>&nbsp;</p>
+        <h3>2020–2021: The Album e The Show</h3>
+        <p>&nbsp;</p>
+        <div class="text">
+            Em 22 de abril, foi confirmado que o Blackpink colaboraria com Lady Gaga em seu sexto álbum de
+            estúdio, Chromatica. A parceria resultou na faixa Sour Candy, lançada como single promocional em 28 de
+            maio de 2020.
+            Nos Estados Unidos, a música estreou na Billboard Hot 100 na posição número 33, garantindo ao Blackpink
+            seu primeiro hit no top 40 e se tornando a canção mais bem colocada do grupo nos EUA até então, além de ser
+            a música mais bem posicionada por um girl group de K-pop. Na Austrália, Sour Candy estreou no número oito,
+            tornando-se o maior sucesso do Blackpink no país. No Reino Unido, a faixa marcou a primeira entrada do grupo
+            no top 20, estreando na posição número 17.
+        </div>
+        <div class="text">
+            Em 18 de maio, a YG Entertainment anunciou que o Blackpink lançaria um single de
+            pré-lançamento em junho, seguido por um segundo single entre julho e agosto, para promover seu primeiro
+            álbum de estúdio coreano.
+            Em 2 de junho, a gravadora confirmou que, após o lançamento do álbum, as integrantes Rosé, Lisa e Jisoo
+            lançariam projetos individuais, com Rosé sendo a primeira. Durante os preparativos para o retorno do grupo,
+            a YG Entertainment lançou um prólogo do novo reality show 24/365 with Blackpink em 13 de junho, antes de
+            seu lançamento oficial no YouTube. O programa documenta o retorno do grupo em 2020, além de mostrar suas
+            vidas diárias por meio de vlogs.
+            O single How You Like That foi amplamente promovido nas mídias sociais antes de seu lançamento digital em
+            26 de junho. A canção alcançou o primeiro lugar nas paradas Digital, Download e Streaming da Gaon por três
+            semanas. Tornou-se a quinta música do Blackpink a entrar na Billboard Hot 100, alcançando a posição número
+            33, e seu videoclipe quebrou cinco recordes mundiais do Guinness. A faixa também ficou em primeiro lugar no
+            Top 10 de Músicas de Verão Globais de 2020 do YouTube Music e ganhou o prêmio de Canção do Verão no MTV
+            Video Music Awards de 2020, tornando o Blackpink o primeiro ato feminino coreano a vencer na premiação.
+            Em 23 de julho, a YG Entertainment anunciou que o segundo single, Ice Cream, em colaboração com a cantora
+            americana Selena Gomez, seria lançado em 28 de agosto. A música estreou na posição número 13 na Billboard
+            Hot 100, tornando-se o maior sucesso do Blackpink até então. Sua estreia no número 39 no Reino Unido fez do
+            grupo o ato coreano com mais hits no top 40 (cinco) naquela região até o momento.
+        </div>
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Blackpink_in_2020_for_PUBG_Mobile.png?20220225011442">
+            <figcaption>Blackpink em 2020 </figcaption>
+        </figure>
+        <br>
+        <div class="text">
+            Blackpink lançou seu primeiro álbum de estúdio coreano, The Album, em 2 de outubro de 2020,
+            com “Lovesick Girls” como seu terceiro e principal single. Antes da estreia do videoclipe exclusivo de
+            “Lovesick Girls”, o Blackpink participou do novo programa de música original do YouTube, sendo o primeiro
+            artista em destaque, que mostrou momentos de “acesso não filtrado” do grupo.
+            O álbum alcançou o número dois na Billboard 200 e no UK Albums Chart, tornando o Blackpink o ato
+            feminino coreano mais bem-sucedido em cada uma dessas paradas. The Album também estabeleceu um recorde de
+            vendas na primeira semana para um girl group coreano, com 590.000 cópias vendidas apenas no primeiro dia do
+            lançamento físico. O grupo se tornou o primeiro girl group de K-pop a vender um milhão de cópias, atingindo
+            aproximadamente 1,2 milhão de cópias em menos de um mês.
+            Blackpink apresentou “Lovesick Girls” nos programas Good Morning America e Jimmy Kimmel Live! nos
+            Estados Unidos em 21 de outubro de 2020.
+        </div>
+        <div class="text">
+            O primeiro documentário do grupo, Blackpink: Light Up the Sky, estreou na Netflix em 14 de
+            outubro de 2020 e abordou os quatro anos desde a estreia do grupo em 2016. O filme inclui imagens dos dias
+            de treinamento das integrantes, vislumbres de suas vidas em casa, histórias dos bastidores e entrevistas com
+            os membros, além de mostrar parte do processo de criação de The Album.
+            O sucesso comercial de The Album, combinado com o documentário da Netflix, colocou o Blackpink no topo do
+            Pop Star Power Ranking da Bloomberg em outubro de 2020, tornando-as o primeiro ato coreano a liderar o
+            ranking desde sua criação em abril daquele ano.
+        </div>
+        <div class="text">
+            Em 2 de dezembro, o Blackpink anunciou sua colaboração com o YouTube Music para realizar seu
+            primeiro show ao vivo. O evento, intitulado The Show, estava inicialmente programado para 27 de dezembro
+            de 2020, mas foi adiado para 31 de janeiro de 2021 devido aos novos regulamentos de pandemia de COVID-19 na
+            Coreia do Sul.
+            O concerto apresentou pela primeira vez diversas músicas do The Album, além da canção “Gone”, de Rosé, do
+            seu primeiro álbum solo R. Mais de 280.000 pessoas adquiriram ingressos para assistir ao show, que foi
+            transmitido ao vivo em 100 países.
+        </div>
+        <div class="text">
+            Blackpink lançou uma versão japonesa de The Album em 3 de agosto de 2021, com versões em
+            japonês de quatro das oito faixas: “How You Like That”, “Pretty Savage”, “Lovesick Girls” e “You Never
+            Know”. O álbum alcançou o número três na Oricon Albums Chart.
+            Para promover o lançamento, o grupo participou de programas de televisão de música no Japão, incluindo o
+            Music Station da TV Asahi. Em 4 de agosto, foi lançado o documentário Blackpink: The Movie nos cinemas
+            da Coreia do Sul e em todo o mundo, apresentando entrevistas exclusivas com o grupo, além de performances ao
+            vivo do The Show e da In Your Area World Tour.
+        </div>
+        <p>&nbsp;</p>
+        <h3>2022–presente: Born Pink </h3>
+        <p>&nbsp;</p>
+        <div class="text">
+            Em 6 de julho de 2022, a YG Entertainment anunciou que o Blackpink estava nos estágios finais
+            de gravação de um novo álbum, com planos de filmar um videoclipe em meados de julho e lançar uma nova canção
+            em agosto. A gravadora também confirmou que o grupo embarcaria em sua segunda turnê mundial no final do ano.
+            Em 12 de julho, a YG Entertainment revelou que o Blackpink realizaria um concerto virtual no jogo PUBG
+            Mobile, de 22 a 30 de julho, incluindo apresentações de sucessos do grupo, além de uma faixa especial
+            intitulada “Ready for Love”, exibida durante o evento pela primeira vez. A música foi lançada na íntegra com
+            um videoclipe animado em 29 de julho.
+            Em 31 de julho, foi anunciado que o segundo álbum do grupo, Born Pink, seria lançado em 16 de setembro,
+            precedido por um single de pré-lançamento intitulado “Pink Venom”, lançado em 19 de agosto, e seguido por
+            uma turnê mundial a partir de outubro.
+            Em 15 de agosto, o grupo foi anunciado como parte da programação do MTV Video Music Awards 2022,
+            tornando-se o primeiro girl group de K-pop da história a participar do evento. O álbum Born Pink e o
+            segundo single, “Shut Down”, foram lançados em 16 de setembro de 2022.
+        </div>
+        <p>&nbsp;</p>
+        <h1 id="integrantes-do-blackpink">Integrantes do BLACKPINK</h1>
+        <table>
+            <tr>
+                <th>Integrante</th>
+                <th>Posição no grupo</th>
+                <th>Nacionalidade</th>
+            </tr>
+            <tr>
+                <td><a href="jisoo.html">Jisoo</a></td>
+                <td>Vocalista principal</td>
+                <td>Coreana</td>
+            </tr>
+            <tr>
+                <td><a href="jennie.html">Jennie</a></td>
+                <td>Rapper principal, vocalista líder</td>
+                <td>Coreana</td>
+            </tr>
+            <tr>
+                <td><a href="rosé.html">Rosé</a></td>
+                <td>Vocalista principal, dançarina líder</td>
+                <td>Neozelandesa/Australiana</td>
+            </tr>
+            <tr>
+                <td><a href="#">Lisa</a></td>
+                <td>Rapper principal, dançarina principal</td>
+                <td>Tailandesa</td>
+            </tr>
+        </table>
+        <p>&nbsp;</p>
+        <div class="list">
+            <h1 id="premios-blackpink">Principais Prêmios do BLACKPINK</h1>
+            <ul>
+                <li>Melhor Grupo Feminino – Mnet Asian Music Awards (2020)</li>
+                <li>Canção do Ano – "Ddu-Du Ddu-Du" (Melon Music Awards, 2018)</li>
+                <li>Grupo Feminino Mais Popular – Golden Disc Awards (2019)</li>
+                <li>Artista Internacional do Ano – Gaon Chart Music Awards (2021)</li>
+                <li>Guinness World Record – Videoclipe mais visto em 24h com “How You Like That”</li>
+            </ul>
+        </div>
+        <h2 style="margin-top:40px;">Curiosidades do BLACKPINK</h2>
+        <div class="grid-cards">
+            <div class="grid-item">Maior girlgroup do mundo</div>
+            <div class="grid-item">Integrantes falam várias línguas</div>
+            <div class="grid-item">Primeiro grupo K-pop no Coachella</div>
+            <div class="grid-item">Vídeos ultrapassam 1 bilhão</div>
+        </div>
+
+    </div>
+    <footer>
+        <p>© 2025 Blackpink Fansite</p>
+    </footer>
+    <script>
+        function menuShow() {
+            const menuMobile = document.querySelector('.mobile-menu');
+            menuMobile.classList.toggle('open');
+        }
+    </script>
+    <script src="js/roll.js"></script>
+</body>
+
+</html>
