@@ -592,7 +592,7 @@ form {
 }
 
 .grid-item {
-    background-color: #ffb6d9;
+    background-color: var(--color-hover);
     padding: 20px;
     border-radius: 15px;
     text-align: center;
