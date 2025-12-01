@@ -274,7 +274,7 @@ input[type=radio] {
     margin: 5px;
     align-items: center;
     border-radius: 50%;
-    background: var(--color-body);
+    background: var(--color-hover-fundo);
     cursor: pointer;
     transition: 0.3s;
 }
