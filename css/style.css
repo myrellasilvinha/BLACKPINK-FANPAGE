@@ -88,7 +88,7 @@ header .menu li i {
     font-size: 18px;
     margin-right: 8px;
     text-align: center;
-    color: var(--color-body);
+    color: var(--color-hover);
     text-decoration: none;
     font-weight: 500;
 }
@@ -96,7 +96,7 @@ header .menu li i {
 header .menu li a {
     position: relative;
     display: block;
-    color: var(--color-body);
+    color: var(--color-hover);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -150,7 +150,7 @@ header .menu button {
     display: flex;
     float: left;
     margin-left: 10px;
-    background-color: var(--color-body);
+    background-color: var(--color-hover);
     border-radius: 15px;
 }
 
