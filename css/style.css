@@ -321,6 +321,10 @@ h3 {
     color: #000000;
 }
 
+p {
+    display: contents;
+}
+
 figure {
     border: 0px solid rgb(0, 0, 0);
     text-align: center;
@@ -637,7 +641,11 @@ input[type="checkbox"]:checked::after {
     transform: rotate(45deg);
 }*/
 
-
+iframe {
+    width: 100%;
+    min-height: 56%;
+    border: none;
+}
 
 
 @media (max-width: 1042px) {
